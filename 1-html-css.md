@@ -1,7 +1,9 @@
-GitHub:Initialized empty Git repository 
-意思是:已初始化空Git存储库
++ GitHub:Initialized empty Git repository 
++ 意思是:已初始化空Git存储库
 
-##html
+
+## html
+
 
 + html不区分大小写,但是尽量使用小写. 注释不能嵌套. 标签必须完整. 标签可以嵌套. 
 + 标签的属性必须加双引号.
@@ -12,17 +14,18 @@ GitHub:Initialized empty Git repository
 	- 用于描述信息 <meta name="description" content="xxxx" />
 + <title> 用于设置页面显示的标题, 在浏览器的选项卡头部显示, 可能对seo有帮助.
 
+
 + <body>
 	- 用于设置网页的主题, 网页中所展示的所有内容 都在body中.
 	- 注意: body中的多个换行和多个空格都会被当做一个空格来处理.
 
+
 + <br> 换行标签(一般不用)
 + <hr> 分割线
-+ <strong> 加粗, 强调作用
-+ <em> 斜体
-+ <i> <b> 斜体和加粗 没有语义化
++ <strong> 加粗
 + <sup> 上标 例子: 5<sup>2</sup> 5的平方
 + <sub> 下标 例子: H<sub>2</sub>O 水的化学表达
+
 
 ### 无序列表
 + <ul>
@@ -30,15 +33,17 @@ GitHub:Initialized empty Git repository
 
 ### 有序列表
 + <ol>
-	-<li>
+	- <li>
 
 ### 自定义列表(类似于文章结构)
 + <dl>
-	-<dt>
-		-<dd>
+	- <dt>
+		- <dd>
+
 
 + ctrl+enter 迅速定位下一行
 + ctrl+/ 变成注释内容
+
 
 + 表单必须写到 <form> </form> 中
 + action 用于设置提交请求的地址
@@ -53,6 +58,8 @@ GitHub:Initialized empty Git repository
 		2. 相对安全
 		3. 容量无限
 		4. 么有缓存
+
+
 + <input> 标签中type属性
 	- 文本: text
 	- 密码: password
@@ -65,6 +72,7 @@ GitHub:Initialized empty Git repository
 + <lable> 用于包括输入框的头部和输入框 使之成为一体.多用于单选和多选
 + <select> <option></option> </select> 下拉框
 
+
 + disabled 不可点击
 + hidden 隐藏
 + readonly 只读
@@ -76,7 +84,9 @@ GitHub:Initialized empty Git repository
 + tr>th  tr>td
 + bgcolor 背景色
 
-###css
+
+## css
+
 
 + # 访问的是id
 + . 访问的是class
@@ -85,6 +95,7 @@ GitHub:Initialized empty Git repository
 + 如果需要用表单给后台提交数据 必须有name属性
 + cellspacing 单元格间隔
 + cellpadding  文字和单元格之间的间距
+
 
 + 相同选择器,后面覆盖前面样式
 + 不同选择器需要对比权重大小
@@ -96,8 +107,10 @@ GitHub:Initialized empty Git repository
 	- g green
 	- b blue
 
+
 + 外部引入样式(开发使用) 
 	- <link rel="stylesheet" type="text/css" href="style.css">
+
 
 + 交集选择器    
 	1. 交集选择器 
@@ -106,6 +119,7 @@ GitHub:Initialized empty Git repository
 		- .p1,.p2{}  
 	3. 后代选择器 .p1 a{} 
 		- .d1 .p1 a{}
+
 
 + font-family: '楷体'
 + 尽量使用英文表示
@@ -132,6 +146,7 @@ GitHub:Initialized empty Git repository
 
 ### css的盒子模型
 
+
 + 盒子边框  border
 + border 边框 border: 30px solid blue;
 	- border-width: 30px;
@@ -155,7 +170,9 @@ GitHub:Initialized empty Git repository
 + 可以控制元素显示或者隐藏
 	display: none;
 
+
 + 根据标签的表现形式,把标签分类 
+
 
 + 块状标签 
 	- 独占一行
@@ -178,6 +195,7 @@ GitHub:Initialized empty Git repository
 	- 块状==> 行内
 	- 块状==> 行内块
 
+
 + display: none;	
 + visible/hidden
 	- 都是隐藏元素,一个是隐藏了不占位置,而这个属性是隐藏了 占据原来的位置
@@ -186,6 +204,7 @@ GitHub:Initialized empty Git repository
 	- auto  自动添加滚动条
 	- scroll 硬添加  不常用
 	- overflow: auto;
+
 
 + text-align  文字排版方式
 + text-indent  首行缩进
@@ -207,8 +226,11 @@ GitHub:Initialized empty Git repository
 	- background-size: 100% auto;
 + 希望鼠标悬浮的时候 修改样式  伪类:hover
 
+
+
 ### 浮动
 > 浮动指的是使元素在脱离原来的文档流, 在父类元素中浮动起来.
+
  
 + 块级元素和行内元素都可以浮动, 当一个行内元素浮动以后将会自动变成一个块级元素.
 + 当一个块级元素浮动以后, 宽度会默认被内容撑开, 所以当漂浮一个块级元素时我们都会为其指定一个宽度.
@@ -217,6 +239,8 @@ GitHub:Initialized empty Git repository
 + 元素设置浮动以后,会一直向上漂浮直到遇到父元素的边界或者其他的浮动元素.
 + 元素浮动以后即完全脱离文档流, 这时不会再影响父元素的高度.也就是浮动元素不会撑开父元素.
 + 浮动元素默认会变为块元素, 即使设置displa:inline 以后其依然是个块元素.
+
+
 + float 浮动
 	- 同级元素要浮动,都浮动!!
 	- 左浮动
@@ -226,16 +250,19 @@ GitHub:Initialized empty Git repository
 	- 如果父类没有写高度,子类盒子发生了浮动,可以设置父类盒子overflow:hidden;
 + 如果子类盒子没有设置浮动 而且父类盒子没有高度 则子类盒子会被父类盒子撑开
 
+
 + 页面布局的原则: 
 	- 优先使用标准文档流
 	- 标准文档流处理不了用浮动
 	- 浮动处理不了用定位
 
+
 + 影响盒子大小的因素
 	- border
 	- padding 特殊: 继承的盒子在父盒子宽度范围内, padding值不会影响盒子该大小.
 
-###定位
+
+## 定位
 > 通过postion属性 可以实现元素的定位. 元素定位之后,需要通过设置left和top值对元素定位.
 
 	+ static 默认
