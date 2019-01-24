@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+	<script>
+		var x=10;
+		var y=30;
+		var z=20;
+		var p=80;
+		function max(x,y){
+			return x>y?x:y; 
+		}
+		alert(max(x,y));
+
+
+		function max2(x,y,z){
+			return max(max(x,y),z);
+		}
+		console.log(max2(x,y,z));
+		alert(max2(x,y,z));
+
+		function max3(x,y,z,p){
+			return max(max(x,y,z),p);
+		}
+		console.log(max3(x,y,z,p));
+		alert(max3(x,y,z,p));
+	</script>
+</head>
+<body>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+	<script>
+		function isSu(n){
+			var flag= true;
+
+			for(var i=2 ; i< n; i++){
+				if(n%i==0){
+					console.log('至少能被'+i+'整除');
+					flag = false;
+					break;
+				}
+			}
+			return flag;     
+		}
+
+			alert(isSu(5));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

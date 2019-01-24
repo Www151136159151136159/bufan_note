@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+	<script>
+		var arr = [3,4,2,5,8,9];
+		function getMax(arr){
+			var maxIndex = 0;
+			for(var i=1; i <arr.length;i++){
+				if(arr[maxIndex]<arr[i]){
+					maxIndex=i;
+				}
+			}
+		
+			return arr[maxIndex];
+		}
+			alert(getMax(arr));
+
+
+		function getMin(arr){
+			var minIndex=0;
+			for(var i=1; i<arr.length;i++){
+				if(arr[minIndex]>arr[i]){
+					minIndex=i;
+				}
+			}
+			console.log('min==>',arr[minIndex]);
+			return arr[minIndex];
+		}
+			
+	</script>
+</head>
+<body>
+
+</body>
+</html>

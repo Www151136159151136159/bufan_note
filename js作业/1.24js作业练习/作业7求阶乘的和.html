@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+	<script>
+		function jc(n){
+			if(n==1){
+				return 1;
+			}
+			return n*jc(n-1);
+		
+		}
+		function jcSum(n){
+			var sum = 0;
+			for(var i=1;i<=n;i++){
+				sum+=jc(i);
+			}
+			return sum;
+		
+		}
+			alert(jcSum(8));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
